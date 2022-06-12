@@ -142,12 +142,6 @@
     <Compile Include="VIEW\formChangePass.designer.cs">
       <DependentUpon>formChangePass.cs</DependentUpon>
     </Compile>
-    <Compile Include="VIEW\formKhachDoan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="VIEW\formKhachDoan.designer.cs">
-      <DependentUpon>formKhachDoan.cs</DependentUpon>
-    </Compile>
     <Compile Include="VIEW\formManageLostStuff.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,9 +194,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VIEW\formChangePass.resx">
       <DependentUpon>formChangePass.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="VIEW\formKhachDoan.resx">
-      <DependentUpon>formKhachDoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VIEW\formManageLostStuff.resx">
       <DependentUpon>formManageLostStuff.cs</DependentUpon>
