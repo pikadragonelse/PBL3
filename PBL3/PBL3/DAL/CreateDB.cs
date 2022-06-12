@@ -84,11 +84,11 @@ namespace PBL3.DAL
 
             context.KhachHangs.AddRange(new KhachHang[]
             {
-                  new KhachHang {IdKhachHang="1", Ten = "NVA", GioiTinh = true, CMND = "197464151", SDT = "0862027357", QuocTich = "VN"},
-                  new KhachHang {IdKhachHang="2", Ten = "NVB", GioiTinh = false, CMND = "197464151", SDT = "0862027357", QuocTich = "VN"},
-                  new KhachHang {IdKhachHang="3", Ten = "NVC", GioiTinh = false, CMND = "197464151", SDT = "0862027357", QuocTich = "VN"},
-                  new KhachHang {IdKhachHang="4", Ten = "NVD", GioiTinh = true, CMND = "197464151", SDT = "0862027357", QuocTich = "VN"},
-                  new KhachHang {IdKhachHang="5", Ten = "NVE", GioiTinh = true, CMND = "197464151", SDT = "0862027357", QuocTich = "VN"},
+                  new KhachHang {IdKhachHang="1", Ten = "NVA", NgaySinh = new DateTime(2002,08,07), GioiTinh = true, CMND = "197464151", SDT = "0862027357", QuocTich = "VN"},
+                  new KhachHang {IdKhachHang="2", Ten = "NVB", NgaySinh = new DateTime(2002,08,07), GioiTinh = false, CMND = "197464151", SDT = "0862027357", QuocTich = "VN"},
+                  new KhachHang {IdKhachHang="3", Ten = "NVC", NgaySinh = new DateTime(2002,08,07) ,GioiTinh = false, CMND = "197464151", SDT = "0862027357", QuocTich = "VN"},
+                  new KhachHang {IdKhachHang="4", Ten = "NVD", NgaySinh = new DateTime(2002,08,07) ,GioiTinh = true, CMND = "197464151", SDT = "0862027357", QuocTich = "VN"},
+                  new KhachHang {IdKhachHang="5", Ten = "NVE", NgaySinh = new DateTime(2002,08,07), GioiTinh = true, CMND = "197464151", SDT = "0862027357", QuocTich = "VN"},
 
             });
 
