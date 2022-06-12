@@ -41,14 +41,21 @@ namespace PBL3.DAL
 
             context.Phongs.AddRange(new Phong[]
             {
-                   new Phong {IdPhong = "P1",Name = "Phòng 301", IdLoaiPhong = "TD", TrangThai = true},
-                   new Phong {IdPhong = "P2",Name = "Phòng 302", IdLoaiPhong = "TDD", TrangThai = true},
-                   new Phong {IdPhong = "P3",Name = "Phòng 303", IdLoaiPhong = "VD", TrangThai = true},
-                   new Phong {IdPhong = "P4",Name = "Phòng 304", IdLoaiPhong = "VDD", TrangThai = true},
-                   new Phong {IdPhong = "P5",Name = "Phòng 305", IdLoaiPhong = "TD", TrangThai = true},
-                   new Phong {IdPhong = "P6",Name = "Phòng 305", IdLoaiPhong = "TD", TrangThai = true},
-                   new Phong {IdPhong = "P7",Name = "Phòng 305", IdLoaiPhong = "TD", TrangThai = true},
-                   new Phong {IdPhong = "P8",Name = "Phòng 305", IdLoaiPhong = "TD", TrangThai = true},
+                  new Phong {IdPhong = "101",Name = "Phòng 101", IdLoaiPhong = "TD", TrangThai = true},
+                   new Phong {IdPhong = "102",Name = "Phòng 102", IdLoaiPhong = "TDD", TrangThai = true},
+                   new Phong {IdPhong = "103",Name = "Phòng 103", IdLoaiPhong = "VD", TrangThai = true},
+                   new Phong {IdPhong = "104",Name = "Phòng 104", IdLoaiPhong = "VDD", TrangThai = true},
+                   new Phong {IdPhong = "105",Name = "Phòng 105", IdLoaiPhong = "TD", TrangThai = true},
+                   new Phong {IdPhong = "201",Name = "Phòng 201", IdLoaiPhong = "TD", TrangThai = true},
+                   new Phong {IdPhong = "202",Name = "Phòng 202", IdLoaiPhong = "TDD", TrangThai = true},
+                   new Phong {IdPhong = "203",Name = "Phòng 203", IdLoaiPhong = "VD", TrangThai = true},
+                   new Phong {IdPhong = "204",Name = "Phòng 204", IdLoaiPhong = "VDD", TrangThai = true},
+                   new Phong {IdPhong = "205",Name = "Phòng 205", IdLoaiPhong = "TD", TrangThai = true},
+                   new Phong {IdPhong = "301",Name = "Phòng 301", IdLoaiPhong = "TD", TrangThai = true},
+                   new Phong {IdPhong = "302",Name = "Phòng 302", IdLoaiPhong = "TDD", TrangThai = true},
+                   new Phong {IdPhong = "303",Name = "Phòng 303", IdLoaiPhong = "VD", TrangThai = true},
+                   new Phong {IdPhong = "304",Name = "Phòng 404", IdLoaiPhong = "VDD", TrangThai = true},
+                   new Phong {IdPhong = "305",Name = "Phòng 305", IdLoaiPhong = "TD", TrangThai = true},
 
 
 
