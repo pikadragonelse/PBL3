@@ -128,6 +128,12 @@
     <Compile Include="DTO\Phong.cs" />
     <Compile Include="DTO\TrangThaiVatDung.cs" />
     <Compile Include="DTO\VatDungPhong.cs" />
+    <Compile Include="VIEW\formChonKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\formChonKhachHang.Designer.cs">
+      <DependentUpon>formChonKhachHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="VIEW\formDSKH.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +176,12 @@
     <Compile Include="VIEW\formThuePhongcs.Designer.cs">
       <DependentUpon>formThuePhongcs.cs</DependentUpon>
     </Compile>
+    <Compile Include="VIEW\formTimeLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\formTimeLine.Designer.cs">
+      <DependentUpon>formTimeLine.cs</DependentUpon>
+    </Compile>
     <Compile Include="VIEW\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,6 +208,9 @@
     <Compile Include="VIEW\_mainForm.Designer.cs">
       <DependentUpon>_mainForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="VIEW\formChonKhachHang.resx">
+      <DependentUpon>formChonKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VIEW\formDSKH.resx">
       <DependentUpon>formDSKH.cs</DependentUpon>
     </EmbeddedResource>
@@ -216,6 +231,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VIEW\formThuePhongcs.resx">
       <DependentUpon>formThuePhongcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\formTimeLine.resx">
+      <DependentUpon>formTimeLine.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VIEW\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>

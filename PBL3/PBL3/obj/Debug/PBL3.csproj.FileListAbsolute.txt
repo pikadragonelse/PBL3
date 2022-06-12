@@ -169,3 +169,5 @@ C:\Users\Asus\OneDrive\Desktop\PBLVersion2\PBL3\PBL3\PBL3\PBL3\bin\Debug\EntityF
 C:\Users\Asus\OneDrive\Desktop\PBLVersion2\PBL3\PBL3\PBL3\PBL3\bin\Debug\RJTextBox.pdb
 C:\Users\Asus\OneDrive\Desktop\PBLVersion2\PBL3\PBL3\PBL3\PBL3\bin\Debug\Room.pdb
 C:\Users\Asus\OneDrive\Desktop\PBLVersion2\PBL3\PBL3\PBL3\PBL3\obj\Debug\PBL3.csproj.CopyComplete
+C:\Users\Asus\OneDrive\Desktop\PBLVersion2\PBL3\PBL3\PBL3\PBL3\obj\Debug\PBL3.VIEW.formTimeLine.resources
+C:\Users\Asus\OneDrive\Desktop\PBLVersion2\PBL3\PBL3\PBL3\PBL3\obj\Debug\PBL3.VIEW.formChonKhachHang.resources

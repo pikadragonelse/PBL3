@@ -51,6 +51,19 @@ namespace PBL3.BLL
             }
             return data;
         }
+        public List<CBBItemPhong> getAllLoaiPhong()
+        {
+            List<CBBItemPhong> data = new List<CBBItemPhong>();
+            foreach (var i in db.LoaiPhongs.Select(p => p))
+            {
+                data.Add(new CBBItemPhong
+                {
+                    Value = i.IdLoaiPhong,
+                    Text = i.TenLoaiPhong,
+                });
+            }
+            return data;
+        }
 
 
 
@@ -66,6 +79,54 @@ namespace PBL3.BLL
                         IdDichVu = i.IdDichVu,
                         TenDichVu = i.TenDichVu,
                         DonGia = i.DonGia
+                    });
+                }
+            }
+            return data;
+        }
+        public List<CBBItemPhong> getCbbPhongByLoaiPhong(string idloaiphong)
+        {
+            List<CBBItemPhong> list = new List<CBBItemPhong>();
+            if (idloaiphong == "All")
+            {
+                foreach (Phong i in db.Phongs.Select(p => p))
+                {
+                        list.Add(new CBBItemPhong { Text = i.Name, Value = i.IdPhong });
+                }
+            }
+            else
+            {
+                foreach (Phong i in db.Phongs.Select(p => p))
+                {
+                    if (i.LoaiPhong.IdLoaiPhong == idloaiphong)
+                    {
+                        list.Add(new CBBItemPhong { Text = i.Name, Value = i.IdPhong });
+
+                    }
+                }
+            }
+           
+            return list;
+        }
+        public List<KhachHangView> getKHViewbyMaKH(string MaKH)
+        {
+            List<KhachHangView> data = new List<KhachHangView>();
+            foreach (var i in db.KhachHangs.Select(p => p))
+            {
+                if (i.IdKhachHang == MaKH)
+                {
+                    string gt = "Nữ";
+                    if (i.GioiTinh) gt = "Nam";
+                    data.Add(new KhachHangView
+                    {
+                        IdKhachHang = i.IdKhachHang,
+                        Ten = i.Ten,
+                        CMND = i.CMND,
+                        NgaySinh = i.NgaySinh,
+                        SDT = i.SDT,
+                        GhiChu = i.GhiChu,
+                        QuocTich = i.QuocTich,
+                        GioiTinh = gt
                     });
                 }
             }

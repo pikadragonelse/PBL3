@@ -20,6 +20,7 @@ namespace PBL3.DTO
         public string TenDichVu { get; set; }
         [Required]
         public string DonGia { get; set; }
+        public int SoLuong { get; set; } = 0;
         public virtual ICollection<HoaDon> HoaDons { get; set; }
     }
 }

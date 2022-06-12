@@ -50,7 +50,27 @@ namespace PBL3.BLL
             }
             return khachHang;  
         }
-
+        public List<KhachHangView> getAllKHView()// phuc viet (k xoa)
+        {
+            List<KhachHangView> data = new List<KhachHangView>();
+            foreach(var i in db.KhachHangs.Select(p => p))
+            {
+                string gt="Nữ";
+                if (i.GioiTinh) gt = "Nam";
+                data.Add(new KhachHangView
+                {
+                IdKhachHang = i.IdKhachHang,
+                Ten = i.Ten,
+                CMND = i.CMND,
+                NgaySinh = i.NgaySinh,
+                SDT = i.SDT,
+                GhiChu = i.GhiChu,
+                QuocTich = i.QuocTich,
+                GioiTinh=gt       
+            });
+            }
+            return data;
+        }
         public List<KhachHangView> getAllKhachHang(string search, string sort)
         {
             var query = db.KhachHangs.Select(p => p).ToList();

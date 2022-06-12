@@ -42,19 +42,7 @@ namespace PBL3.BLL
         {
             return db.Phongs.Select(p => p).ToList();
         }
-        public List<CBBItemPhong> getCbbPhongByLoaiPhong(string idloaiphong)
-        {
-            List<CBBItemPhong> list = new List<CBBItemPhong>();
-            foreach (Phong i in db.Phongs.Select(p => p))
-            {
-                if (i.LoaiPhong.IdLoaiPhong == idloaiphong)
-                {
-                    list.Add(new CBBItemPhong { Text = i.Name, Value = i.IdPhong });
-
-                }
-            }
-            return list;
-        }
+       
 
 
 
