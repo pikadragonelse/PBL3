@@ -16,11 +16,17 @@ namespace PBL3.VIEW
         {
             InitializeComponent();
             dataGridView1.DataSource = ThuePhong_BLL.Instance.getAllDichVu();
+            cbbTenPhong.Items.AddRange(ThuePhong_BLL.Instance.getAllPhong().ToArray());
         }
 
         private void bunifuDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = ThuePhong_BLL.Instance.getDVbySearch(txtSearch.Text);
         }
     }
 }

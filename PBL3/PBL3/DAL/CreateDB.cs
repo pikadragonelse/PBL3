@@ -54,7 +54,7 @@ namespace PBL3.DAL
                    new Phong {IdPhong = "301",Name = "Phòng 301", IdLoaiPhong = "TD", TrangThai = true},
                    new Phong {IdPhong = "302",Name = "Phòng 302", IdLoaiPhong = "TDD", TrangThai = true},
                    new Phong {IdPhong = "303",Name = "Phòng 303", IdLoaiPhong = "VD", TrangThai = true},
-                   new Phong {IdPhong = "304",Name = "Phòng 404", IdLoaiPhong = "VDD", TrangThai = true},
+                   new Phong {IdPhong = "304",Name = "Phòng 304", IdLoaiPhong = "VDD", TrangThai = true},
                    new Phong {IdPhong = "305",Name = "Phòng 305", IdLoaiPhong = "TD", TrangThai = true},
 
 
@@ -63,10 +63,10 @@ namespace PBL3.DAL
             });
 
             context.DoThatLacs.AddRange(new DoThatLac[] {
-                new DoThatLac {ID = "1", Name = "Do1", IdPhong = "P1", TinhTrang = "Khách chưa liên hệ"},
-                new DoThatLac {ID = "2", Name = "Do2", IdPhong = "P2", TinhTrang = "Đã trả"},
-                new DoThatLac {ID = "3", Name = "Do3", IdPhong = "P3", TinhTrang = "Khách đã liên hệ"},
-                new DoThatLac {ID = "4", Name = "Do4", IdPhong = "P2", TinhTrang = "Khách chưa liên hệ"},
+                new DoThatLac {ID = "1", Name = "Do1", IdPhong = "101", TinhTrang = "Khách chưa liên hệ"},
+                new DoThatLac {ID = "2", Name = "Do2", IdPhong = "102", TinhTrang = "Đã trả"},
+                new DoThatLac {ID = "3", Name = "Do3", IdPhong = "103", TinhTrang = "Khách đã liên hệ"},
+                new DoThatLac {ID = "4", Name = "Do4", IdPhong = "104", TinhTrang = "Khách chưa liên hệ"},
 
             });
 
@@ -135,11 +135,11 @@ namespace PBL3.DAL
 
 
             context.VatDungPhongs.AddRange(new VatDungPhong[] { 
-                new VatDungPhong {IdVatDung = "1", IdTrangThaiVatDung = "1", IdPhong = "P1", SoLuongBanDau = 5, SoLuongHienTai = 4, IdLoaiVatDung = "1" },
-                new VatDungPhong {IdVatDung = "2", IdTrangThaiVatDung = "2", IdPhong = "P2", SoLuongBanDau = 5, SoLuongHienTai = 4, IdLoaiVatDung = "2" },
-                new VatDungPhong {IdVatDung = "3", IdTrangThaiVatDung = "2", IdPhong = "P3", SoLuongBanDau = 5, SoLuongHienTai = 4, IdLoaiVatDung = "3" },
-                new VatDungPhong {IdVatDung = "4", IdTrangThaiVatDung = "1", IdPhong = "P4", SoLuongBanDau = 5, SoLuongHienTai = 4, IdLoaiVatDung = "4" },
-                new VatDungPhong {IdVatDung = "5", IdTrangThaiVatDung = "1", IdPhong = "P1", SoLuongBanDau = 5, SoLuongHienTai = 4, IdLoaiVatDung = "1" },
+                new VatDungPhong {IdVatDung = "1", IdTrangThaiVatDung = "1", IdPhong = "101", SoLuongBanDau = 5, SoLuongHienTai = 4, IdLoaiVatDung = "1" },
+                new VatDungPhong {IdVatDung = "2", IdTrangThaiVatDung = "2", IdPhong = "102", SoLuongBanDau = 5, SoLuongHienTai = 4, IdLoaiVatDung = "2" },
+                new VatDungPhong {IdVatDung = "3", IdTrangThaiVatDung = "2", IdPhong = "103", SoLuongBanDau = 5, SoLuongHienTai = 4, IdLoaiVatDung = "3" },
+                new VatDungPhong {IdVatDung = "4", IdTrangThaiVatDung = "1", IdPhong = "104", SoLuongBanDau = 5, SoLuongHienTai = 4, IdLoaiVatDung = "4" },
+                new VatDungPhong {IdVatDung = "5", IdTrangThaiVatDung = "1", IdPhong = "105", SoLuongBanDau = 5, SoLuongHienTai = 4, IdLoaiVatDung = "1" },
 
             });
 
@@ -161,14 +161,14 @@ namespace PBL3.DAL
 
             context.BookDetails.AddRange(new BookDetail[]
 {
-                new BookDetail {IdBookDetail = "1" ,IdBook = "1", IdPhong = "P1"},
-                new BookDetail {IdBookDetail = "2" ,IdBook = "1", IdPhong = "P2"},
-                new BookDetail {IdBookDetail = "3" ,IdBook = "1", IdPhong = "P3"},
-                new BookDetail {IdBookDetail = "4" ,IdBook = "2", IdPhong = "P5"},
-                new BookDetail {IdBookDetail = "5" ,IdBook = "3", IdPhong = "P6"},
-                new BookDetail {IdBookDetail = "6" ,IdBook = "4", IdPhong = "P7"},
-                new BookDetail {IdBookDetail = "7" ,IdBook = "5", IdPhong = "P8"},
-                new BookDetail {IdBookDetail = "8" ,IdBook = "4", IdPhong = "P4"},
+                new BookDetail {IdBookDetail = "1" ,IdBook = "1", IdPhong = "101"},
+                new BookDetail {IdBookDetail = "2" ,IdBook = "1", IdPhong = "102"},
+                new BookDetail {IdBookDetail = "3" ,IdBook = "1", IdPhong = "103"},
+                new BookDetail {IdBookDetail = "4" ,IdBook = "2", IdPhong = "105"},
+                new BookDetail {IdBookDetail = "5" ,IdBook = "3", IdPhong = "201"},
+                new BookDetail {IdBookDetail = "6" ,IdBook = "4", IdPhong = "202"},
+                new BookDetail {IdBookDetail = "7" ,IdBook = "5", IdPhong = "301"},
+                new BookDetail {IdBookDetail = "8" ,IdBook = "4", IdPhong = "104"},
 
 
 });

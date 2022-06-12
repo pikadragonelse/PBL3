@@ -38,5 +38,38 @@ namespace PBL3.BLL
             }
             return data;
         }
+        public List<CBBItemPhong> getAllPhong()
+        {
+            List<CBBItemPhong> data = new List<CBBItemPhong>();
+            foreach (var i in db.Phongs.Select(p => p))
+            {
+                data.Add(new CBBItemPhong
+                {
+                    Value = i.IdPhong,
+                    Text = i.Name,
+                });
+            }
+            return data;
+        }
+
+
+
+        public List<DichVuView> getDVbySearch(string txt)
+        {
+            List<DichVuView> data = new List<DichVuView>();
+            foreach (var i in db.LoaiDichVus.Select(p => p))
+            {
+                if (i.TenDichVu.Contains(txt))
+                {
+                    data.Add(new DichVuView
+                    {
+                        IdDichVu = i.IdDichVu,
+                        TenDichVu = i.TenDichVu,
+                        DonGia = i.DonGia
+                    });
+                }
+            }
+            return data;
+        }
     }
 }
