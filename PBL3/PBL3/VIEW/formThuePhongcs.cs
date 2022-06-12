@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace PBL3.VIEW
 {
-    public partial class formThuePhong : Form
+    public partial class formThuePhongcs : Form
     {
-        public formThuePhong()
+        public formThuePhongcs()
         {
             InitializeComponent();
+        }
+
+        private void bunifuDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
